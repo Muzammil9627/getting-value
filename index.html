@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting value</title>
+</head>
+<body>
+    <!-- <label for="firstName">firstName<input type="text" name="firstName" id="firstName"></label>
+    <br>
+    <label for="lastName">lastName <input type="text" name="lastName" id="lastName"></label>
+    <br>
+    <button onclick="submit()">Submit</button>
+
+    <div id="namecontainer"></div> -->
+    <label for="num1"><input type="number" name="num1" id="num1"></label>
+    <br>
+    <label for="num2"><input type="number" name="num2" id="num2"></label>
+    <br>
+    <button onclick="plus()">Plus</button>
+    <br>
+    <button onclick="minus()">minus</button>
+    <div id="container1"></div>
+    
+
+
+    <script>
+        // function submit(){
+        //     let firstName = document.getElementById("firstName").value;
+        //     let lastName = document.getElementById("lastName").value;
+        //     console.log(firstName,lastName)
+        //     document.getElementById("namecontainer").innerText = firstName + lastName
+        //     // document.getElementById("namecontainer").innerText = firstName + " " + lastName;
+        // }
+        function plus(){
+            let num1 = Number(document.getElementById("num1").value)
+            let num2 = Number(document.getElementById("num2").value)
+            document.getElementById("container1").innerText= num1 + num2;
+        }
+
+        function minus(){
+            let num1 = Number(document.getElementById("num1").value)
+            let num2 = Number(document.getElementById("num2").value)
+            document.getElementById("container1").innerText= num1 - num2;
+        }
+    </script>
+</body>
+</html>
